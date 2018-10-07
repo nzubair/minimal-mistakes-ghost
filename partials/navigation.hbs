@@ -1,3 +1,4 @@
+    <!-- start masthead -->
     <div class="masthead">
         <div class="masthead__inner-wrap">
             <div class="masthead__menu">
@@ -6,13 +7,15 @@
                         <div class="navicon"></div>
                     </button>
                     <ul class="visible-links">
-                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://randombrainworks.com/"><span
-                                    class='masthead_random'>Random</span><span class='masthead_brainworks'>Brainworks</span></a></li>
-                        <li class="masthead__menu-item"><a href="https://randombrainworks.com/about/">About</a></li>
-                        <li class="masthead__menu-item"><a href="https://randombrainworks.com/reading">Reading List</a></li>
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://randombrainworks.com/"><span class='masthead_random'>Random</span><span class='masthead_brainworks'>Brainworks</span></a></li>
+                        {{#foreach navigation}}
+                            <li class="masthead__menu-item"><a href='{{url absolute=" true "}}'>{{label}}</a></li>
+                        {{/foreach}}
                     </ul>
                     <ul class="hidden-links hidden"></ul>
                 </nav>
             </div>
         </div>
-    </div> <!-- end masthead -->
+    </div> 
+
+    <!-- end masthead -->
