@@ -3,11 +3,10 @@
     <div class="sidebar sticky">
             <div itemscope itemtype="http://schema.org/Person">
                 <div class="author__avatar">
-                    <img src="https://randombrainworks.com/assets/images/nasirzubair.jpeg" class="author__avatar" alt="Nasir Zubair"
-                        itemprop="image">
+                    <img src="{{asset "images/author.jpeg"}}" class="author__avatar" alt="{{> "social/blog_author"}}"                     itemprop="image">
                 </div>
                 <div class="author__content">
-                    <h3 class="author__name" itemprop="name">Nasir Zubair</h3>
+                    <h3 class="author__name" itemprop="name">{{> "social/blog_author"}}</h3>
                     <p class="author__bio" itemprop="description">
                         I am a Desktop Engineer, with a penchant for scripting, automation, and even some development.<br /><br />The
                         views expressed herein are my own and do not represent the views of my employer.
@@ -17,36 +16,35 @@
                     <button class="btn btn--inverse">Follow</button>
                     <ul class="author__urls social-icons">
                         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-                            <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Staten
-                                Island, NY</span>
+                            <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{> "social/location"}}</span>
                         </li>
                         <li>
-                            <a href="https://keybase.io/nzubair" itemprop="sameAs">
+                            <a href="https://keybase.io/{{> "social/keybase"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-key" aria-hidden="true"></i> Keybase
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/nsr81" itemprop="sameAs">
+                            <a href="https://twitter.com/{{> "social/twitter"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/nasirzubair" itemprop="sameAs">
+                            <a href="https://www.linkedin.com/in/{{> "social/linkedin"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/nzubair" itemprop="sameAs">
+                            <a href="https://github.com/{{> "social/github"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.stackoverflow.com/users/16522/nasir" itemprop="sameAs">
+                            <a href="https://www.stackoverflow.com/users/{{> "social/stackoverflow"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.reddit.com/user/nzubair81" itemprop="sameAs">
+                            <a href="https://www.reddit.com/user/{{> "social/reddit"}}" itemprop="sameAs">
                                 <i class="fa fa-fw fa-reddit" aria-hidden="true"></i> Reddit
                             </a>
                         </li>
