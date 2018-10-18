@@ -57,12 +57,10 @@
             {{/next_post}}
         </nav>
     </div>
-    <div class="page__comments">
-        <h4 class="page__comments-title">Leave a Comment</h4>
-        <section id="disqus_thread"></section>
-    </div>
+    {{> "comments" }}
     </article>
-    {{#get "posts" limit="4" filter="id:-{{id}}" }}
+    <!-- {{comment_id}} -->
+    {{#get "posts" limit="4" filter="id:-{{comment_id}}" }}
         {{> "related" recentposts=posts }}
     {{/get}}
 {{/post}}

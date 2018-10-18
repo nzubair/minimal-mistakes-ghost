@@ -2,16 +2,20 @@
     <!-- sidebar start -->
     <div class="sidebar sticky">
             <div itemscope itemtype="http://schema.org/Person">
+                {{#get "users" filter="slug:-ghost" as |user| }}
+                {{#user}}
                 <div class="author__avatar">
-                    <img src="{{asset "images/author.jpeg"}}" class="author__avatar" alt="{{> "social/blog_author"}}"                     itemprop="image">
+                    <img src="{{asset "images/author.jpeg"}}" class="author__avatar" alt="{{name}}" itemprop="image">
                 </div>
+
                 <div class="author__content">
-                    <h3 class="author__name" itemprop="name">{{> "social/blog_author"}}</h3>
+                    <h3 class="author__name" itemprop="name">{{name}}</h3>
                     <p class="author__bio" itemprop="description">
-                        I am a Desktop Engineer, with a penchant for scripting, automation, and even some development.<br /><br />The
-                        views expressed herein are my own and do not represent the views of my employer.
+                        {{{bio}}}
                     </p>
                 </div>
+                {{/user}}
+                {{/get}}
                 <div class="author__urls-wrapper">
                     <button class="btn btn--inverse">Follow</button>
                     <ul class="author__urls social-icons">
