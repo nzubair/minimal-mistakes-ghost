@@ -3956,6 +3956,36 @@ tr, td, th {
     margin-bottom: 0;
     /* override*/ }
 
+/* Error Message Template from  Casper (https://github.com/TryGhost/Casper/blob/master/assets/css/screen.css) */
+.error-message {
+  text-align: center; }
+
+.error-code {
+  margin: 0;
+  font-size: 12vw;
+  line-height: 1em;
+  letter-spacing: -5px;
+  opacity: 0.3; }
+
+.error-description {
+  margin: 0;
+  color: var(--midgrey);
+  font-size: 1.75rem;
+  line-height: 1.3em;
+  font-weight: 400; }
+
+@media (max-width: 800px) {
+  .error-description {
+    margin: 5px 0 0 0;
+    font-size: 1.8rem; } }
+
+.error-link {
+  display: inline-block;
+  margin-top: 5px; }
+
+.error-template .post-feed {
+  padding-top: 0; }
+
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
@@ -5947,3 +5977,80 @@ select:focus {
   .ads,
   .page__footer {
     display: none; } }
+
+.kg-image-card {
+  margin: 0 0 2em;
+  max-width: none !important; }
+  .kg-image-card.kg-width-wide {
+    max-width: 48em !important;
+    min-width: 100%;
+    width: 75vw; }
+  .kg-image-card.kg-width-full {
+    max-width: none;
+    width: 100vw;
+    margin-top: 2em; }
+  .kg-image-card .kg-image {
+    margin: 0 auto; }
+  .kg-image-card figcaption {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    max-width: 32em;
+    margin: auto;
+    font-size: 0.75em;
+    line-height: 1.25em;
+    padding: 0.667em 0; }
+  .kg-image-card .kg-image-full + figcaption {
+    margin-bottom: 1.334em; }
+
+.kg-gallery-card {
+  margin: 0 0 2em;
+  max-width: 48em !important;
+  min-width: 100%;
+  width: 75vw; }
+  .kg-gallery-card figcaption {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    max-width: 32em;
+    margin: auto;
+    font-size: 0.75em;
+    line-height: 1.25em;
+    padding: 0.667em 0; }
+
+.kg-gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.kg-gallery-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+.kg-gallery-row:not(:first-of-type) {
+  margin: 0.75em 0 0 0; }
+
+.kg-gallery-image:not(:first-of-type) {
+  margin: 0 0 0 0.75em; }
+
+.kg-embed-card {
+  margin: 0 0 2em; }
+  .kg-embed-card > * {
+    margin-left: auto;
+    margin-right: auto; }

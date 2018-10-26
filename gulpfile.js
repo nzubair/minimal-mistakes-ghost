@@ -3,10 +3,9 @@
 var gulp = require('gulp');
 
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var zip = require("gulp-zip");
 
 sass.compiler = require("node-sass");
 
