@@ -1,7 +1,7 @@
 {
   "name": "minimal-mistakes-ghost",
   "description": "Ghost theme based on Minimal Mistakes theme for Jekyll.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "ghost": ">=2.0.0"
   },
@@ -22,6 +22,11 @@
     "ghost-theme",
     "minimal-mistakes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzubair/minimal-mistakes-ghost.git"
+  },
+  "bugs": "https://github.com/nzubair/minimal-mistakes-ghost/issues",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
