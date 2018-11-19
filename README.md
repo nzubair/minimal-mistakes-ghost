@@ -15,7 +15,7 @@ more recent version of Minimal Mistakes.
 
 ## TODO
 
- - [ ] Syntax Highlighting
+ - [x] Syntax Highlighting
  - [ ] Koenig Styles Testing -`.kg-*`
  - [ ] Blog cover picture
  - [ ] Post/page cover picture.
