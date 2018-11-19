@@ -1,7 +1,7 @@
 {
   "name": "minimal-mistakes-ghost",
   "description": "Ghost theme based on Minimal Mistakes theme for Jekyll.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "ghost": ">=2.0.0"
   },
