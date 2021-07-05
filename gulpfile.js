@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require("node-sass"));
 var autoprefixer = require('gulp-autoprefixer');
 var zip = require("gulp-zip");
 var uglify = require('gulp-uglify');
@@ -14,7 +14,7 @@ sass.compiler = require("node-sass");
 gulp.task('sass', function(){
     return gulp.src('_sass/**/*.scss')
             .pipe(sass({outputStyle: 'compressed'}))
-            .pipe(autoprefixer({browsers: ['last 2 versions']}))
+            .pipe(autoprefixer())
             .pipe(concat('main.css'))
             .pipe(gulp.dest('assets/css'));
 });
@@ -29,7 +29,7 @@ gulp.task('prismcss', function(){
 gulp.task('sass-dev', function(){
     return gulp.src('_sass/**/*.scss')
             .pipe(sass())
-            .pipe(autoprefixer({browsers: ['last 2 versions']}))
+            .pipe(autoprefixer())
             .pipe(concat('main.css'))
             .pipe(gulp.dest('assets/css'));
 });
@@ -53,7 +53,7 @@ gulp.task('prismjs',function(){
 
 
 // BRING IT TOGETHER
-gulp.task('zip', ['sass', 'prismcss', 'js', 'prismjs'], function () {
+gulp.task('zip', function () {
     var targetDir = 'dist/';
     var themeName = require('./package.json').name;
     var themeVersion = require('./package.json').version;
@@ -68,3 +68,4 @@ gulp.task('zip', ['sass', 'prismcss', 'js', 'prismjs'], function () {
         .pipe(gulp.dest(targetDir));
 });
 
+gulp.task('default', gulp.series('sass', 'prismcss', 'js', 'prismjs', 'zip'));
