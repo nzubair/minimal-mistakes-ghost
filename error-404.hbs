@@ -8,7 +8,7 @@
 
     {{ghost_head}}
 
-    <link href="{{@blog.url}}/rss" type="application/atom+xml" rel="alternate" title="{{@blog.title}} Feed">
+    <link href="{{@site.url}}/rss" type="application/atom+xml" rel="alternate" title="{{@site.title}} Feed">
     
     <!-- http://t.co/dKP3o1e -->
     <meta name="HandheldFriendly" content="True">
@@ -38,7 +38,7 @@
        <section class="error-message">
                     <h1 class="error-code">{{code}}</h1>
                     <p class="error-description">{{message}}</p>
-                    <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
+                    <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
         </section>
         <br /><br />
     </div>
@@ -53,7 +53,7 @@
                             Twitter</a></li>
                     <li><a href="http://github.com/{{> "social/github" }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i>
                             GitHub</a></li>
-                    <li><a href="{{@blog.url}}/rss/"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
+                    <li><a href="{{@site.url}}/rss/"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
                             Feed</a></li>
                 </ul>
             </div>
