@@ -2,7 +2,7 @@
     <!-- sidebar start -->
     <div class="sidebar sticky">
             <div itemscope itemtype="http://schema.org/Person">
-                {{#get "users" filter="slug:-ghost" as |user| }}
+                {{#get "authors" filter="slug:-ghost" as |user| }}
                 {{#user}}
                 <div class="author__avatar">
                     <img src="{{profile_image}}" class="author__avatar" alt="{{name}}" itemprop="image">
