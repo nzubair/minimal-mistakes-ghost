@@ -2,8 +2,9 @@
   "name": "minimal-mistakes-ghost",
   "description": "Ghost theme based on Minimal Mistakes theme for Jekyll.",
   "version": "0.0.6",
-  "engines": {
-    "ghost": ">=2.0.0"
+    "engines": {
+    "ghost": ">=5.0.0",
+    "ghost-api": "v5"
   },
   "author": {
     "name": "Nasir Zubair",
@@ -28,14 +29,18 @@
   },
   "bugs": "https://github.com/nzubair/minimal-mistakes-ghost/issues",
   "devDependencies": {
+    "chalk": "^2.4.2",
+    "gscan": "^4.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-chmod": "^3.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.1.0",
+    "lodash": "^4.17.21",
     "node-sass": "^6.0.1"
   },
   "config": {
