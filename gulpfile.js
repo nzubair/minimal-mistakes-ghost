@@ -23,7 +23,7 @@ const levels = {
 const distDir = 'dist/';
 const themeName = require('./package.json').name;
 const themeVersion = require('./package.json').version;
-const themeZip = distDir + themeName + '-' + themeVersion + '.zip';
+const themeZip = themeName + '-' + themeVersion + '.zip';
 
 
 // STYLES
@@ -126,7 +126,7 @@ gulp.task('gscan', function () {
         console.log('\n...checks complete.');
       };
 
-    return gscan.checkZip({ path: themeZip, name: themeName})
+    return gscan.checkZip({ path: distDir + themeZip, name: themeName})
         .then(printGscanResults);
 });
 

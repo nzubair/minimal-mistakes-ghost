@@ -3,8 +3,8 @@
   "description": "Ghost theme based on Minimal Mistakes theme for Jekyll.",
   "version": "0.0.6",
     "engines": {
-    "ghost": ">=5.0.0",
-    "ghost-api": "v5"
+    "ghost": ">=4.0.0",
+    "ghost-api": "v4"
   },
   "author": {
     "name": "Nasir Zubair",
