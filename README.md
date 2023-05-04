@@ -1,3 +1,10 @@
+| ⚠️ **WARNING**                     |
+|:------------------------------------|
+| This repo is archived. 
+| Last updates included bumping up dependencies to resolve security issues. However, no testing was done after the depency changes. **_Things may be broken!_**. | 
+
+
+
 # Minimal Mistakes for Ghost
 
 Minimal Mistakes (for Ghost) is a port of [Michael Rose's](https://github.com/mmistakes) Jekyll theme, [Minimal Mistake](https://github.com/mmistakes/minimal-mistakes) for [Ghost](https://ghost.org/) platform. 
